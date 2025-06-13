@@ -127,7 +127,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_botonCerrarActionPerformed
 
     private void botonJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonJugarActionPerformed
-       
+       seleccionPlayer player = new seleccionPlayer();
+       player.setVisible(true);
+       this.dispose();
         
     }//GEN-LAST:event_botonJugarActionPerformed
 

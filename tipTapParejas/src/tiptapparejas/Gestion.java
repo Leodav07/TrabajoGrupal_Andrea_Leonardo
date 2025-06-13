@@ -6,7 +6,7 @@ public class Gestion {
     private static Gestion gestor;
     private Usuarios usuario;
 
-    private Usuarios buscarUsuario(String nombre) {
+    public Usuarios buscarUsuario(String nombre) {
         for (Usuarios users : usuarios) {
             if (users != null && users.getNombre().equals(nombre)) {
                 return users;
@@ -55,7 +55,7 @@ public class Gestion {
         if (usuarioEncontrado != null) {
             if (nombre.equals(usuarioEncontrado.getNombre())
                     && password.equals(usuarioEncontrado.getPassword())) {
-                usuario = usuarioEncontrado; // Actualizar usuario actual
+                usuario = usuarioEncontrado;
                 return true;
             }
         }

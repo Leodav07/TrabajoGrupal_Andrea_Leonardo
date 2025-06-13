@@ -4,17 +4,27 @@
  */
 package tiptapparejas;
 
+import javax.swing.*;
+
 /**
  *
  * @author hnleo
  */
 public class seleccionPlayer extends javax.swing.JFrame {
 
+    Usuarios usuario;
+    Gestion gestion;
+    Usuarios usuarioActual = Gestion.getGestor().getUsuarioActual();
+
     /**
      * Creates new form seleccionPlayer
      */
     public seleccionPlayer() {
         initComponents();
+        gestion = Gestion.getGestor();
+        if (usuarioActual != null) {
+            player1.setText(usuarioActual.getNombre());
+        }
     }
 
     /**
@@ -26,24 +36,129 @@ public class seleccionPlayer extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        player1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        player2Text = new javax.swing.JTextField();
+        botonIniciar = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(500, 200));
         setMinimumSize(new java.awt.Dimension(500, 200));
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 204));
+        jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 4, true));
+
+        jLabel1.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
+        jLabel1.setText("Jugador 1:");
+
+        jLabel2.setFont(new java.awt.Font("Agency FB", 1, 36)); // NOI18N
+        jLabel2.setText("Selección de Jugador");
+
+        player1.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
+        player1.setText("Name");
+
+        jLabel4.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
+        jLabel4.setText("Jugador 2:");
+
+        botonIniciar.setBackground(new java.awt.Color(255, 255, 153));
+        botonIniciar.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
+        botonIniciar.setText("INICIAR");
+        botonIniciar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        botonIniciar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonIniciarActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap(80, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(player1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(45, 45, 45)
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(player2Text, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(40, 40, 40))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(botonIniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(182, 182, 182))))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                    .addContainerGap(126, Short.MAX_VALUE)
+                    .addComponent(jLabel2)
+                    .addGap(104, 104, 104)))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(86, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(player1)
+                    .addComponent(jLabel4)
+                    .addComponent(player2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
+                .addComponent(botonIniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(16, 16, 16)
+                    .addComponent(jLabel2)
+                    .addContainerGap(132, Short.MAX_VALUE)))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 500, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 200, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void botonIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonIniciarActionPerformed
+        String namePlayer2 = player2Text.getText().trim();
+       
+        if (namePlayer2.equalsIgnoreCase("exit")) {
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.setVisible(true);
+            this.dispose();
+        }
+        Usuarios player2 = gestion.buscarUsuario(namePlayer2);
+        if (player2 == null) {
+            JOptionPane.showMessageDialog(this,"Jugador no existe.");
+            player2Text.setText("");
+            return;
+        }
+
+        if (usuarioActual.getNombre().equals(player2.getNombre())) {
+            JOptionPane.showMessageDialog(this, "El Jugador debe ser diferente al primer Jugador.");
+            player2Text.setText("");
+           
+            return;
+        }
+        
+        tableroXO tablero = new tableroXO();
+        tablero.setVisible(true);
+        this.dispose();
+
+    }//GEN-LAST:event_botonIniciarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -81,5 +196,12 @@ public class seleccionPlayer extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botonIniciar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel player1;
+    private javax.swing.JTextField player2Text;
     // End of variables declaration//GEN-END:variables
 }

@@ -29,6 +29,15 @@ public class tableroXO extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
+        boton0_0 = new javax.swing.JButton();
+        boton0_1 = new javax.swing.JButton();
+        boton0_2 = new javax.swing.JButton();
+        boton1_0 = new javax.swing.JButton();
+        boton1_1 = new javax.swing.JButton();
+        boton1_2 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(500, 500));
@@ -49,40 +58,66 @@ public class tableroXO extends javax.swing.JFrame {
         jPanel2.setMaximumSize(new java.awt.Dimension(420, 380));
         jPanel2.setMinimumSize(new java.awt.Dimension(420, 380));
         jPanel2.setPreferredSize(new java.awt.Dimension(420, 380));
+        jPanel2.setLayout(new java.awt.GridLayout(3, 3));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 418, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 378, Short.MAX_VALUE)
-        );
+        boton0_0.setText("BOTON1");
+        jPanel2.add(boton0_0);
+
+        boton0_1.setText("BOTON2");
+        boton0_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boton0_1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(boton0_1);
+
+        boton0_2.setText("BOTON3");
+        jPanel2.add(boton0_2);
+
+        boton1_0.setText("BOTON4");
+        boton1_0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boton1_0ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(boton1_0);
+
+        boton1_1.setText("BOTON5");
+        jPanel2.add(boton1_1);
+
+        boton1_2.setText("BOTON6");
+        jPanel2.add(boton1_2);
+
+        jButton7.setText("BOTON7");
+        jPanel2.add(jButton7);
+
+        jButton8.setText("BOTON8");
+        jPanel2.add(jButton8);
+
+        jButton9.setText("BOTON9");
+        jPanel2.add(jButton9);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(173, 173, 173)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(38, 38, 38)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addGap(173, 173, 173)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(44, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(33, 33, 33)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addContainerGap(58, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -103,6 +138,14 @@ public class tableroXO extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void boton0_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton0_1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_boton0_1ActionPerformed
+
+    private void boton1_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton1_0ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_boton1_0ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -140,6 +183,15 @@ public class tableroXO extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton boton0_0;
+    private javax.swing.JButton boton0_1;
+    private javax.swing.JButton boton0_2;
+    private javax.swing.JButton boton1_0;
+    private javax.swing.JButton boton1_1;
+    private javax.swing.JButton boton1_2;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
