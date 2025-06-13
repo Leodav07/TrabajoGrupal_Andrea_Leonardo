@@ -30,9 +30,93 @@ public boolean jugadas(int fila, int columna){
        tablero[fila][columna] = jO;
    }
    
+   if(verificar()){
+       finDeJuego=true;
+       if(turnoX){
+           ganador = jX;
+       }else{
+           ganador = jO;
+       }
+   }else if(tableroCompletado()){
+       finDeJuego = true;
+       ganador = empate;
+   }
+   
    if(!finDeJuego){
        turnoX = false;
    }
    return true;
+}
+
+private boolean verificar(){
+    char ficha;
+    if(turnoX){
+        ficha = jX;
+    }else{
+        ficha = jO;
+    }
+    for (int i = 0; i < 3; i++) {
+        if(tablero[i][0]==ficha&&tablero[i][1]==ficha&&tablero[i][2]==ficha){
+            return true;
+        }
+    }
+    for (int i = 0; i < 3; i++) {
+        if(tablero[0][i]==ficha&&tablero[1][i]==ficha&&tablero[2][i]==ficha){
+            return true;
+        }
+    }
+    if(tablero[0][0]==ficha&&tablero[1][1]==ficha&&tablero[2][2]==ficha){
+            return true;
+        }
+    if(tablero[0][2]==ficha&&tablero[1][1]==ficha&&tablero[2][0]==ficha){
+            return true;
+        }
+   return false;
+}
+
+public void reiniciar(){
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            tablero[i][j] = empate;
+        }
+        ganador = empate;
+        turnoX = true;
+        finDeJuego = false;
+    }
+}
+
+public char getCaseta(int fila, int columna){
+    return tablero[fila][columna];
+}
+public Usuarios getJugadorActual(){
+    if(turnoX){
+        return jugador1;
+    }else{
+        return jugador2;
+    }
+}
+
+public Usuarios getJugador1(){
+    return jugador1;
+}
+public Usuarios getJugador2(){
+    return jugador2;
+}
+
+private boolean tableroCompletado(){
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if(tablero[i][j]==empate){
+                return false;
+            }
+        }
+    }
+    return true;
+}
+public boolean isFin(){
+    return finDeJuego;
+}
+public char getGane(){
+    return ganador;
 }
 }
