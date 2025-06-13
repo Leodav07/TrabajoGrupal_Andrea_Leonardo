@@ -35,8 +35,16 @@ public class Gestion {
         return false;
     }
    
-   public String getUsuario(){
-       return usuario.getNombre();
+   public Usuarios getUsuario(String nombre){
+        for (Usuarios u : usuarios) {
+        if (u.getNombre().equals(nombre)) {
+            return u;
+        }
+    }
+    return null;
+   }
+   public Usuarios getUsuarioActual(){
+       return usuario;
    }
    
    public Boolean acceder(String nombre, String password) {
@@ -52,5 +60,9 @@ public class Gestion {
             return false;
         }
         return false;
+        
     }
+   
+   
+   
 }

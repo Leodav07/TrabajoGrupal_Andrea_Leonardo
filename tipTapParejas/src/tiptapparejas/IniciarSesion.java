@@ -151,9 +151,13 @@ public class IniciarSesion extends javax.swing.JFrame {
     private void accederBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accederBotonActionPerformed
         String nombre = usuarioText.getText();
         String password = new String(passwordText.getPassword());
-        boolean t = gestion.acceder(nombre, password);
-        if(t){
+       
+        if(Gestion.getGestor().acceder(nombre, password)){
+            
             JOptionPane.showMessageDialog(null, "Inicio de Sesion exitoso");
+            MenuPrincipal menuPrincipal = new MenuPrincipal();
+            menuPrincipal.setVisible(true);
+            this.dispose();
         }else{
             JOptionPane.showMessageDialog(null, "Usuario o clave incorrecta.");
         }
