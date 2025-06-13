@@ -79,10 +79,11 @@ public void reiniciar(){
         for (int j = 0; j < 3; j++) {
             tablero[i][j] = empate;
         }
-        ganador = empate;
+      
+    }
+      ganador = empate;
         turnoX = true;
         finDeJuego = false;
-    }
 }
 
 public char getCaseta(int fila, int columna){
@@ -118,5 +119,14 @@ public boolean isFin(){
 }
 public char getGane(){
     return ganador;
+}
+
+public Usuarios getGanador(){
+    if(ganador == jX){
+        return jugador1;
+    }else if(ganador==jO){
+        return jugador2;
+    }
+    return null;
 }
 }

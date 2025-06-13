@@ -6,6 +6,8 @@ package tiptapparejas;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.*;
+import java.awt.*;
 
 /**
  *
@@ -13,23 +15,35 @@ import javax.swing.JButton;
  */
 public class tableroXO extends javax.swing.JFrame {
 private logica inicio;
-private ImageIcon X, O;
+
 private JButton botones[][];
     Gestion gestion;
     Usuarios usuarioActual = Gestion.getGestor().getUsuarioActual();
 
     
-    public tableroXO() {
+    public tableroXO(Usuarios jugador1, Usuarios jugador2) {
+        inicio = new logica(jugador1, jugador2);
         initComponents();
-        cargarImagen();
+        
     }
 
-    private void cargarImagen(){
-        ImageIcon x = new ImageIcon(getClass().getResource("/tiptapparejas/x.png"));
-        ImageIcon o = new ImageIcon(getClass().getResource("/tiptapparejas/o.png"));
-          X = x;
-          O = o;
+    private void cargarJuego(){
+        botones = new JButton[3][3];
+         for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                final int fila = i;
+                final int columna = j;
+                
+                botones[i][j].addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        realizarJugada(fila, columna);
+                    }
+                });
+            }
+        }
     }
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
