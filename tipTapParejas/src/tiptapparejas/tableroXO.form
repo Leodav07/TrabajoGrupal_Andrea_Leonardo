@@ -128,55 +128,28 @@
           </Layout>
           <SubComponents>
             <Component class="javax.swing.JButton" name="boton0_0">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="BOTON1"/>
-              </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="boton0_1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="BOTON2"/>
-              </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton0_1ActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="boton0_2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="BOTON3"/>
-              </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="boton1_0">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="BOTON4"/>
-              </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton1_0ActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="boton1_1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="BOTON5"/>
-              </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="boton1_2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="BOTON6"/>
-              </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton7">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="BOTON7"/>
-              </Properties>
+            <Component class="javax.swing.JButton" name="boton2_0">
             </Component>
-            <Component class="javax.swing.JButton" name="jButton8">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="BOTON8"/>
-              </Properties>
+            <Component class="javax.swing.JButton" name="boton2_1">
             </Component>
-            <Component class="javax.swing.JButton" name="jButton9">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="BOTON9"/>
-              </Properties>
+            <Component class="javax.swing.JButton" name="boton2_2">
             </Component>
           </SubComponents>
         </Container>
