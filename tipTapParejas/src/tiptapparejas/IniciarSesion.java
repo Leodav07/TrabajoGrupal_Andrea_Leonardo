@@ -1,17 +1,17 @@
-
 package tiptapparejas;
+
 import javax.swing.*;
 
-
 public class IniciarSesion extends javax.swing.JFrame {
-   MenuInicio menu = new MenuInicio();
-   Gestion gestion = new Gestion();
+
+    MenuInicio menu = new MenuInicio();
+    Gestion gestion = new Gestion();
+
     public IniciarSesion() {
         initComponents();
         gestion = Gestion.getGestor();
     }
 
- 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -145,24 +145,25 @@ public class IniciarSesion extends javax.swing.JFrame {
     private void botonSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonSesionActionPerformed
         dispose();
         menu.setVisible(true);
-       
+
     }//GEN-LAST:event_botonSesionActionPerformed
 
     private void accederBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accederBotonActionPerformed
         String nombre = usuarioText.getText();
         String password = new String(passwordText.getPassword());
-       
-        if(Gestion.getGestor().acceder(nombre, password)){
-            
+
+        if (Gestion.getGestor().acceder(nombre, password)) {
+
             JOptionPane.showMessageDialog(null, "Inicio de Sesion exitoso");
             MenuPrincipal menuPrincipal = new MenuPrincipal();
             menuPrincipal.setVisible(true);
             this.dispose();
-        }else{
+        } else {
             JOptionPane.showMessageDialog(null, "Usuario o clave incorrecta.");
+            this.dispose();
+            menu.setVisible(true);
         }
     }//GEN-LAST:event_accederBotonActionPerformed
-
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

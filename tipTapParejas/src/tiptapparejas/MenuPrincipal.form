@@ -69,9 +69,9 @@
                   <EmptySpace min="-2" pref="170" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabel2" min="-2" pref="96" max="-2" attributes="0"/>
-                      <Component id="botonSalir" min="-2" pref="153" max="-2" attributes="0"/>
-                      <Component id="botonRegistro" min="-2" pref="153" max="-2" attributes="0"/>
-                      <Component id="botonSesion" min="-2" pref="153" max="-2" attributes="0"/>
+                      <Component id="botonCerrar" min="-2" pref="153" max="-2" attributes="0"/>
+                      <Component id="botonRanking" min="-2" pref="153" max="-2" attributes="0"/>
+                      <Component id="botonJugar" min="-2" pref="153" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="177" max="32767" attributes="0"/>
@@ -86,11 +86,11 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                  <Component id="botonSesion" min="-2" pref="52" max="-2" attributes="0"/>
+                  <Component id="botonJugar" min="-2" pref="52" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                  <Component id="botonRegistro" min="-2" pref="52" max="-2" attributes="0"/>
+                  <Component id="botonRanking" min="-2" pref="52" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-                  <Component id="botonSalir" min="-2" pref="52" max="-2" attributes="0"/>
+                  <Component id="botonCerrar" min="-2" pref="52" max="-2" attributes="0"/>
                   <EmptySpace pref="108" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -105,7 +105,7 @@
             <Property name="text" type="java.lang.String" value="TIC-TAC-TOE"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="botonSesion">
+        <Component class="javax.swing.JButton" name="botonJugar">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="ff" red="ff" type="rgb"/>
@@ -121,10 +121,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonSesionActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonJugarActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="botonRegistro">
+        <Component class="javax.swing.JButton" name="botonRanking">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="ff" red="ff" type="rgb"/>
@@ -140,10 +140,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonRegistroActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonRankingActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="botonSalir">
+        <Component class="javax.swing.JButton" name="botonCerrar">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="ff" red="ff" type="rgb"/>
@@ -159,7 +159,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonSalirActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonCerrarActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">

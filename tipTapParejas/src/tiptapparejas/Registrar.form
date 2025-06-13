@@ -132,7 +132,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Agency FB" size="36" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="TIP-TAP-TOE"/>
+            <Property name="text" type="java.lang.String" value="TIC-TAC-TOE"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="registrarBoton">

@@ -37,7 +37,7 @@ public class Registrar extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(500, 500));
 
         jLabel1.setFont(new java.awt.Font("Agency FB", 1, 36)); // NOI18N
-        jLabel1.setText("TIP-TAP-TOE");
+        jLabel1.setText("TIC-TAC-TOE");
 
         registrarBoton.setBackground(new java.awt.Color(255, 255, 153));
         registrarBoton.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N

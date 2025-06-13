@@ -21,9 +21,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        botonSesion = new javax.swing.JButton();
-        botonRegistro = new javax.swing.JButton();
-        botonSalir = new javax.swing.JButton();
+        botonJugar = new javax.swing.JButton();
+        botonRanking = new javax.swing.JButton();
+        botonCerrar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
@@ -39,33 +39,33 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Agency FB", 1, 36)); // NOI18N
         jLabel1.setText("TIC-TAC-TOE");
 
-        botonSesion.setBackground(new java.awt.Color(255, 255, 153));
-        botonSesion.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
-        botonSesion.setText("JUGAR X-0");
-        botonSesion.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
-        botonSesion.addActionListener(new java.awt.event.ActionListener() {
+        botonJugar.setBackground(new java.awt.Color(255, 255, 153));
+        botonJugar.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
+        botonJugar.setText("JUGAR X-0");
+        botonJugar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        botonJugar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonSesionActionPerformed(evt);
+                botonJugarActionPerformed(evt);
             }
         });
 
-        botonRegistro.setBackground(new java.awt.Color(255, 255, 153));
-        botonRegistro.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
-        botonRegistro.setText("RANKING");
-        botonRegistro.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
-        botonRegistro.addActionListener(new java.awt.event.ActionListener() {
+        botonRanking.setBackground(new java.awt.Color(255, 255, 153));
+        botonRanking.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
+        botonRanking.setText("RANKING");
+        botonRanking.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        botonRanking.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonRegistroActionPerformed(evt);
+                botonRankingActionPerformed(evt);
             }
         });
 
-        botonSalir.setBackground(new java.awt.Color(255, 255, 153));
-        botonSalir.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
-        botonSalir.setText("CERRAR SESION");
-        botonSalir.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
-        botonSalir.addActionListener(new java.awt.event.ActionListener() {
+        botonCerrar.setBackground(new java.awt.Color(255, 255, 153));
+        botonCerrar.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
+        botonCerrar.setText("CERRAR SESION");
+        botonCerrar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        botonCerrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonSalirActionPerformed(evt);
+                botonCerrarActionPerformed(evt);
             }
         });
 
@@ -77,9 +77,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 .addGap(170, 170, 170)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botonRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botonSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonRanking, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonJugar, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
                 .addContainerGap(177, Short.MAX_VALUE))
         );
@@ -91,11 +91,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2)
                 .addGap(47, 47, 47)
-                .addComponent(botonSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(botonJugar, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(49, 49, 49)
-                .addComponent(botonRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(botonRanking, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(44, 44, 44)
-                .addComponent(botonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(botonCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(108, Short.MAX_VALUE))
         );
 
@@ -118,24 +118,22 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void botonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonSalirActionPerformed
-        MenuInicio menu = new MenuInicio();
-        menu.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_botonSalirActionPerformed
+    private void botonCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCerrarActionPerformed
+        Gestion.getGestor().cerrar();
+        this.dispose();
+            IniciarSesion iniciar = new IniciarSesion();
+            iniciar.setVisible(true);
+       
+    }//GEN-LAST:event_botonCerrarActionPerformed
 
-    private void botonSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonSesionActionPerformed
-        dispose();
-        IniciarSesion iniciar = new IniciarSesion();
-        iniciar.setVisible(true);
+    private void botonJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonJugarActionPerformed
+       
         
-    }//GEN-LAST:event_botonSesionActionPerformed
+    }//GEN-LAST:event_botonJugarActionPerformed
 
-    private void botonRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRegistroActionPerformed
-         dispose();
-         Registrar registro = new Registrar();
-         registro.setVisible(true);
-    }//GEN-LAST:event_botonRegistroActionPerformed
+    private void botonRankingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRankingActionPerformed
+        
+    }//GEN-LAST:event_botonRankingActionPerformed
 
 
     public static void main(String args[]) {
@@ -174,9 +172,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton botonRegistro;
-    private javax.swing.JButton botonSalir;
-    private javax.swing.JButton botonSesion;
+    private javax.swing.JButton botonCerrar;
+    private javax.swing.JButton botonJugar;
+    private javax.swing.JButton botonRanking;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
