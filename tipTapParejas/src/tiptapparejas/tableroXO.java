@@ -20,8 +20,8 @@ private JButton botones[][];
     Usuarios usuarioActual = Gestion.getGestor().getUsuarioActual();
 
     
-    public tableroXO(Usuarios jugador1, Usuarios jugador2) {
-        inicio = new logica(jugador1, jugador2);
+    public tableroXO() {
+      
         initComponents();
         
     }
